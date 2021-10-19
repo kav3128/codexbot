@@ -160,7 +160,7 @@ installModules().then(async () => {
 
   Utils.yml('./config.yml')
     .then(config => {
-      bot.login(process.env.TOKEN).catch(error => {
+      bot.login(config.TOKEN).catch(error => {
         console.log(Utils.errorPrefix + "Your bot token is incorrect! Shutting down...")
         process.exit()
       })
