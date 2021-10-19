@@ -1,0 +1,13 @@
+Permission: admin
+Messages:
+  NoPermission:
+    Title: You do not have permission to this command
+  NoChannel:
+    Title: That channel does not exisit.
+  NoArgs:
+    Title: "Correct Usage: nuke <channel>"
+  NukeMessage:
+    Title: The channel has been nuked!
+    Description: Why the fuck did I make this addon?
+  Nuked:
+    Title: That channel has been nuked k

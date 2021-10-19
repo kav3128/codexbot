@@ -1,0 +1,29 @@
+DeletingMessages:
+  Author: 🔄 Deleting Messages.... This could take a minute.
+  color: "#f52c2c"
+NoMessagesToDelete:
+  Author: There are no messages in the channel that matches your requirements
+  color: "#f52c2c"
+InvalidNumber:
+  Author: Clear amount cant be over 100 or less than 1!
+  color: "#f52c2c"
+Commands:
+  Clear:
+    Usage: clear
+      <count/bots/embeds/commands/links/images/@user/userId/mentions/"regex"/'keyword'>
+      <amount>
+    Lang:
+      bots:
+        - bots
+      embeds:
+        - embeds
+      links:
+        - links
+      images:
+        - images
+      commands:
+        - commands
+      mentions:
+        - mentions
+      webhooks:
+        - webhooks

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "59LAddons.db": [
+      {
+        "id": "39001eb7-6a59-41cb-b26f-023e5b0e78fd",
+        "line": 2,
+        "version": 1,
+        "index": 101
+      }
+    ],
+    "config.yml": [
+      {
+        "id": "b896ac1e-5cc3-47a5-bbf9-c0133914d80a",
+        "line": 284,
+        "version": 726,
+        "index": 7674
+      }
+    ]
+  }
+}

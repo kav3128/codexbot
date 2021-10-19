@@ -1,0 +1,56 @@
+Enabled: true
+Settings:
+  Command:
+    Command: preset
+    Usage: preset <channel> <preset-name>
+    Description: Send Presets messages to specified channel
+    Aliases: []
+    Type: general
+  PresetList:
+    Command: presetlist
+    Usage: presetlist
+    Description: Shows Preset Lists
+    Aliases: []
+    Type: general
+  Presets:
+    - # Normal Messages only Example
+      Name: Normal
+      # Set channel to false if messages send in current channel
+      Channel: stest
+      Permission: "@everyone"
+      Normal:
+        - Normal message 1
+        - Normal message 2
+        - Normal message 3
+      Embeds: false
+    - # Embed only Example
+      Name: Embed
+      Channel: stest
+      Permission: Developer
+      Normal: false
+      Embeds:
+        - Title: Embeds Test 1
+          Description: "1"
+        - Title: Embeds Test 2
+          Description: "1"
+        - Title: Embeds Test 3
+          Description: "1"
+    - # Normal Messages & Embeds Example
+      Name: Both
+      Channel: stest
+      Permission: Developer
+      Normal:
+        - Normal message 1
+      Embeds:
+        - Title: Embeds Test 1
+          Description: "1"
+Messages:
+  Preset:
+    Description: No preset name was provided
+  Invalid_Preset:
+    Description: Preset provided was invalid.
+  Preset_Lists:
+    Title: Preset Lists
+    Description: "{list}"
+    Footer: "{user-username}"
+    Timestamp: true

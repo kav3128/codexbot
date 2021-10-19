@@ -1,0 +1,63 @@
+RequiredRole: "@everyone"
+RequiredCoins: 1000
+BlacklistedNames:
+  - Example1
+  - Exanple2
+  - Example3
+LogChannel: nickname-Logs
+Command:
+  Name: nickname
+  Description: Change your nickname for a small cost
+  Usage: nickname <nickname>
+  Aliases:
+    - nick
+  Type: coins
+Embeds:
+  Errors:
+    NotEnoughCoins:
+      Description: You don't have enough coins to do this action.
+      Color: "#f52c2c"
+    BlacklistedName:
+      Title: Invalid nickname
+      Description: You tried using atleast one blacklisted word.
+      Color: "#f52c2c"
+    MissingPerms:
+      Title: Missing Permissions
+      Description: |-
+        I tried changing your nickname but I dont have valid permissions.
+
+        **Reasons**
+        {reasons}
+      Color: "#f52c2c"
+      Lang:
+        HighestRole: |-
+          猬嗭笍 **Role Not High Enough**
+          > My role isnt the highest role in this guild.
+        Owner: |-
+          馃憫 **Guild Owner**
+          > You are the guild owner and I am unable to edit your nickname. 
+        RolePermission: >-
+          **No Permission**
+
+          > I have no permission to edit you because your role(s) are equal or higher than mine.
+  Success:
+    NameChanged:
+      Title: Nickname Changed
+      Description: Your nickname has been changed to ``{nickname}``!
+      Color: "#25de1f"
+    NicknameCleared:
+      Title: Nickname Cleared
+      Description: Your nickname has been cleared!
+      Color: "#25de1f"
+    Log:
+      Title: New Nickname Change
+      Fields:
+        - name: User
+          value: |-
+            {user-tag} 
+            {user-mention} ({user-id})
+          inline: true
+        - name: Changes
+          value: "{old-nickname} **->** {new-nickname}"
+          inline: true
+      timestamp: true

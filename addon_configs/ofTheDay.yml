@@ -1,0 +1,52 @@
+Channel: "837047442456313857"
+# ^ MUST BE A CHANNEL ID
+Mode: AUTO-FACT
+# OPTIONS: MANUAL or AUTO-QUESTION or AUTO-FACT
+# MANUAL: Set the questions below.
+# AUTO-QUESTION: Will use randomly generated questions
+# AUTO-FACT: Will use randomly generated facts
+TimeHour: "8"
+# 24h time (0=12am, 1=1am. 2=2am.... 13=1pm ect...
+TimeMins: "0"
+# use the raw number, NOT 01 insted just put 1
+# THIS IS IN THE BOTS TIME ZONE!!!!
+Message: "**New Fact of the DAY!**"
+# to ping roles to <@&ROLE-ID-HERE>
+PinMessage: false
+ManualCommmandName: qotd
+AutoQuestionCommandName: qotda
+AutoFactCommandName: fotda
+Perm: Owner
+# ^ Perm for the testing commands
+Questions:
+  - If You Had Three Wishes, What Would You Wish For?
+  - What’s The Most Beautiful Place You’ve Ever Seen?
+  - What Was Your Fondest Memory Of High School?
+  - What’s Your Favorite TV Show?
+  - What’s The Strangest Thing In Your Refrigerator?
+  - Have You Ever Been To A Five Star Resort?
+  - What Was Your Favorite Toy Growing Up?
+  - What’s The Funniest Way You’ve Ever Broken The Law?
+  - What’s Your Favorite Sports Team?
+  - What Talent Would You Want To Possess If You Could?
+  - If You Could Trade Lives With Someone, Who Would It Be?
+  - If You Could Erase One Event From History, Which One Would You Erase?
+  - What Was Your Favorite Toy As A Child?
+# Add as many lines as you would like, above is an example
+Embeds:
+  ManualEmbed:
+    Title: ❔ ❓ Question of the day ❔ ❓
+    Description: "**Todays question:** {Question}"
+    Footer: Asked on {Date}
+  AutoQuestionEmbed:
+    Title: ❔ ❓ Question of the day ❔ ❓
+    Description: |-
+      **Todays Question:** {Question}
+      **Answer:** ||{Answer}||
+    Footer: Asked on {Date}
+  AutoFactEmbed:
+    Title: ❔ ❓ Fact of the day ❔ ❓
+    Description: "**Todays Fact:** {Fact}"
+    Footer: Asked on {Date}
+  NoPerms:
+    Title: You are lacking the perms to run this command!

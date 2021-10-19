@@ -1,0 +1,43 @@
+Enabled: true
+Beg:
+  Enabled: true
+  Aliases: []
+  Settings:
+    PermissionRole: ""
+    MaxCoins: 100
+    # Chance in % out of 100
+    Chance: 25
+  Messages:
+    Beg:
+      Recived:
+        - You begged at a police station, and a nice police officer gave you
+          **{money}$**
+        - A wise man gave you **{money}$**
+      None:
+        - You tried to beg someone, and you got ignored
+        - You found **{money}$** on ground, but they were fake.
+    Recived:
+      Description: "{randomMessage}"
+      Timestamp: true
+    None:
+      Description: "{randomMessage}"
+      Timestamp: true
+Roll:
+  Enabled: true
+  Aliases: []
+  Settings:
+    # Coins that will be taken away when command is ran
+    Cost: 20
+    Prices:
+      One: 10
+      Two: 20
+      Three: 30
+      Four: 40
+      Five: 50
+      Six: 60
+  Messages:
+    Title: Roll
+    Description: |-
+      You landed on **{roll}**.
+      You won **{coins}$**
+    Thumbnail: "{dice-image}"
